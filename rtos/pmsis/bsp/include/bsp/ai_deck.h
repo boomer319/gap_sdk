@@ -55,4 +55,13 @@
 #define CONFIG_SPIFLASH_SIZE        (1<<24)
 #define CONFIG_SPIFLASH_SECTOR_SIZE (1<<12)
 
+#include "bsp/flash/hyperflash.h"
+#include "bsp/ram/hyperram.h"
+
+#define pi_default_flash_conf pi_hyperflash_conf
+#define pi_default_flash_conf_init pi_hyperflash_conf_init
+
+#define pi_default_ram_conf pi_hyperram_conf
+#define pi_default_ram_conf_init pi_hyperram_conf_init
+
 #endif
